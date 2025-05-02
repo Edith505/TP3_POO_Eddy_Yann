@@ -58,7 +58,7 @@ public class DecalageCle extends AbstractAvecParametre {
 
         double fin = System.nanoTime();
         double duree = fin - debut;
-        ResultatCryptage resultat = new ResultatCryptage(this, LocalDateTime.now(), duree, texteLisible, traduitListeEnTexte(result));
+        ResultatCryptage resultat = new ResultatCryptage(this,  texteLisible, true);
         this.applicationUI.ajouteResultat(resultat);
         return traduitListeEnTexte(result);
     }
@@ -77,7 +77,7 @@ public class DecalageCle extends AbstractAvecParametre {
         }
         double fin = System.nanoTime();
         double duree = fin - debut;
-        ResultatCryptage resultat = new ResultatCryptage(this, LocalDateTime.now(), duree, texteEncrypte, traduitListeEnTexte(result));
+        ResultatCryptage resultat = new ResultatCryptage(this, texteEncrypte, false);
         this.applicationUI.ajouteResultat(resultat);
         return traduitListeEnTexte(result);
     }

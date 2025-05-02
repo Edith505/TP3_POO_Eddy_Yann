@@ -3,7 +3,6 @@ package h25.msd.poo2.etu.algo;
 
 import h25.msd.poo2.echange.ApplicationUI;
 import h25.msd.poo2.echange.ResultatI;
-import h25.msd.poo2.etu.recherche.Resultat;
 import h25.msd.poo2.etu.recherche.ResultatCryptage;
 
 import java.util.ArrayList;
@@ -32,8 +31,8 @@ public class DecalageFixe extends AbstractSansParametre {
 
         double fin = System.nanoTime();
         double duree = fin - debut;
-        ResultatI resultat = new ResultatCryptage(this, texteLisible, traduitListeEnTexte(modifiees), duree);
-        setApplicationUI(this.applicationUI.ajouteResultat(resultat));
+        /*ResultatI resultat = new ResultatCryptage(this, texteLisible, true);
+        setApplicationUI(this.applicationUI.ajouteResultat(resultat));*/
 
         return traduitListeEnTexte(modifiees);
     }
