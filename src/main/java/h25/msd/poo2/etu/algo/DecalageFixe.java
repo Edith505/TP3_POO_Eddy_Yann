@@ -18,7 +18,7 @@ public class DecalageFixe extends AbstractSansParametre {
 
     @Override
     public String encrypte(String texteLisible) {
-        double debut = System.nanoTime();
+//        double debut = System.nanoTime();
 
         List<Integer> valeurs = traduitTexteEnListe(texteLisible);
         List<Integer> modifiees = new ArrayList<>();
@@ -29,10 +29,11 @@ public class DecalageFixe extends AbstractSansParametre {
 
         setNombreUsages(getNombreUsages() + 1);
 
-        double fin = System.nanoTime();
-        double duree = fin - debut;
-        /*ResultatI resultat = new ResultatCryptage(this, texteLisible, true);
-        setApplicationUI(this.applicationUI.ajouteResultat(resultat));*/
+//        double fin = System.nanoTime();
+//        double duree = fin - debut;
+//        ResultatCryptage resultat = new ResultatCryptage(this, texteLisible, true);
+//        setApplicationUI(this.applicationUI.ajouteResultat(resultat));
+
 
         return traduitListeEnTexte(modifiees);
     }
