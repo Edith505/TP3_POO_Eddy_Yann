@@ -31,8 +31,8 @@ public class DecalageFixe extends AbstractSansParametre {
 
 //        double fin = System.nanoTime();
 //        double duree = fin - debut;
-//        ResultatCryptage resultat = new ResultatCryptage(this, texteLisible, true);
-//        setApplicationUI(this.applicationUI.ajouteResultat(resultat));
+        ResultatCryptage resultat = new ResultatCryptage(this, texteLisible, true);
+        this.applicationUI.ajouteResultat(resultat);
 
 
         return traduitListeEnTexte(modifiees);
