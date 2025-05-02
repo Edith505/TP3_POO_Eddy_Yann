@@ -15,6 +15,6 @@ public class ApplicationModel implements ApplicationModelI {
 
     @Override
     public String getNomsAuteurs() {
-        return "";
+        return "Yann & Eddy";
     }
 }
