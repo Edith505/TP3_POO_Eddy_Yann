@@ -17,5 +17,6 @@ public abstract class AbstractSansParametre extends AbstractAlgoBase implements 
 
     @Override
     public abstract String decrypte(String texteEncrypte);
+
 }
 

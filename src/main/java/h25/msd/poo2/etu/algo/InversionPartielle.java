@@ -5,8 +5,8 @@ import h25.msd.poo2.echange.ApplicationUI;
 public class InversionPartielle extends AbstractSansParametre{
 
 
-    public InversionPartielle(String nom) {
-        super(nom);
+    public InversionPartielle() {
+        super("InversionPartielle" );
     }
 
     @Override

@@ -22,7 +22,7 @@ public class Model implements ApplicationModelI {
 
     @Override
     public String getNomsAuteurs() {
-        return "Vos noms";
+        return "Eddy & Yann";
     }
 
 
