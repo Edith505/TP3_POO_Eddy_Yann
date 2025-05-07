@@ -28,16 +28,12 @@ public class TexteIO {
                 bw.write(System.lineSeparator());
             }
 
-            bw.flush();
         } catch (IOException e) {
             throw new RuntimeException("Erreur lors de l'écriture du fichier : " + fichier.getName(), e);
         } finally {
             try {
                 if (br != null) {
                     br.close();
-                }
-                if (bw != null) {
-                    bw.close();
                 }
             } catch (IOException e) {
                 throw new RuntimeException("Erreur lors de la fermeture du fichier : " + fichier.getName(), e);

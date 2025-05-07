@@ -7,9 +7,7 @@ import h25.msd.poo2.etu.exception.TP3Exception;
 import h25.msd.poo2.etu.utilisateur.AbstractUtilisateur;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.Map;
-import java.util.HashMap;
+
 
 
 public class GestionnaireFichiers implements GestionnaireFichierI {
@@ -17,7 +15,7 @@ public class GestionnaireFichiers implements GestionnaireFichierI {
     private final TexteIO texteIO;
 
     public GestionnaireFichiers() {
-        this.texteIO = new TexteIO(); // pas besoin de ApplicationUI
+        this.texteIO = new TexteIO();
     }
 
     @Override
