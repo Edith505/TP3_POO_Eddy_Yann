@@ -15,7 +15,8 @@ public class MoteurRecherche implements MoteurRechercheI {
     @Override
     public void ajouteResultat(ResultatI resultat) {
         resultats.add(resultat);
-        }
+    }
+
     @Override
     public Set<ResultatI> recherche(String motRecherche) {
         Set<ResultatI> result = new HashSet<>();
@@ -36,7 +37,23 @@ public class MoteurRecherche implements MoteurRechercheI {
 
     @Override
     public void triResultat(CritereTri critereTri, List<ResultatI> resultats) {
+        if (!(resultats == null || resultats.isEmpty())) {
 
+            switch (critereTri) {
+                case ALGO_PUIS_TAILLE_TEXTE_ORIGINAL:
+                    resultats.sort(new ComparateurAlgoPuisTaille());
+                    break;
+                case ALGO_PUIS_DATE:
+                    resultats.sort(new ComparateurAlgoPuisDate());
+                    break;
+                case NOMBRE_UTILISATION_PUIS_DATE:
+                    resultats.sort(new ComparateurUsagesPuisDate());
+                    break;
+                default:
+                    Collections.sort(resultats);
+                    break;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -44,8 +61,6 @@ public class MoteurRecherche implements MoteurRechercheI {
         ResultatI resultatI;
 //        moteur.ajouteResultat();
     }
-
-
 
 
 }
