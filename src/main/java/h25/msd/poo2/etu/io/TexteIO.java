@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.Map;
 import java.util.HashMap;
 
+
 /*
  * S'occupe des fichiers textes.
  */
