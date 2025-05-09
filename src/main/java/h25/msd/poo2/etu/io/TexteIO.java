@@ -6,11 +6,9 @@ import h25.msd.poo2.etu.exception.TP3FichierException;
 import h25.msd.poo2.etu.utilisateur.AbstractUtilisateur;
 
 import java.io.*;
-import java.net.URL;
 import java.util.Map;
 import java.util.HashMap;
 
-import static com.sun.javafx.scene.control.skin.Utils.getResource;
 
 /*
  * S'occupe des fichiers textes.
