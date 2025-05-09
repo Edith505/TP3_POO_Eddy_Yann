@@ -11,8 +11,9 @@ public class ApplicationModel implements ApplicationModelI {
     public void initialise(ApplicationUI ui) {
         MoteurRechercheI moteurRecherche = new MoteurRecherche();
         ui.setMoteurRecherche(moteurRecherche);
-        GestionnaireFichiers gestionnaire = new GestionnaireFichiers();
-        ui.setGestionnaireFichiers(gestionnaire);
+
+        GestionnaireFichiers gestionnaireFichiers = new GestionnaireFichiers();
+        ui.setGestionnaireFichiers(gestionnaireFichiers);
     }
 
 

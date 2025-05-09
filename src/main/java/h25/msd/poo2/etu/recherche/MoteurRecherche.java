@@ -9,6 +9,7 @@ import java.util.*;
 public class MoteurRecherche implements MoteurRechercheI {
 
 
+
     private final List<ResultatI> resultats = new ArrayList<>();
 
 
@@ -35,10 +36,10 @@ public class MoteurRecherche implements MoteurRechercheI {
         return resultats;
     }
 
+    //Eddy Manoa Randrianarison: 2433177
     @Override
     public void triResultat(CritereTri critereTri, List<ResultatI> resultats) {
         if (!(resultats == null || resultats.isEmpty())) {
-
             switch (critereTri) {
                 case ALGO_PUIS_TAILLE_TEXTE_ORIGINAL:
                     resultats.sort(new ComparateurAlgoPuisTaille());
