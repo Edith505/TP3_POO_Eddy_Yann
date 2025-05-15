@@ -6,6 +6,7 @@ package h25.msd.poo2.etu;
 
 import h25.msd.poo2.echange.ApplicationModelI;
 import h25.msd.poo2.echange.ApplicationUI;
+import h25.msd.poo2.echange.GestionnaireFichierI;
 import h25.msd.poo2.etu.io.GestionnaireFichiers;
 import h25.msd.poo2.echange.MoteurRechercheI;
 import h25.msd.poo2.etu.recherche.MoteurRecherche;
@@ -19,7 +20,7 @@ public class Model implements ApplicationModelI {
         ui.setMoteurRecherche(moteurRecherche);
 
         // Initialisation du gestionnaire de fichiers
-        GestionnaireFichiers gestionnaire = new GestionnaireFichiers();
+        GestionnaireFichierI gestionnaire = new GestionnaireFichiers();
         ui.setGestionnaireFichiers(gestionnaire);
 
     }

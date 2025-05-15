@@ -1,6 +1,7 @@
 package h25.msd.poo2.etu.io;
 
 import h25.msd.poo2.echange.AlgorithmeI;
+import h25.msd.poo2.echange.ApplicationUI;
 import h25.msd.poo2.echange.Dossiers;
 import h25.msd.poo2.echange.GestionnaireFichierI;
 import h25.msd.poo2.etu.exception.TP3Exception;
@@ -14,6 +15,7 @@ import java.util.Map;
 public class GestionnaireFichiers implements GestionnaireFichierI {
     private final TexteIO texteIO;
     private final UtilisateurIO utilisateurIO;
+    private ApplicationUI ui;
     private final String DOSSIER_BASE = "fichiers";
     private final Map<Dossiers, String> dossiers = Map.of(
             Dossiers.TEXTES_ORIGINAUX, "originaux",
@@ -104,6 +106,7 @@ public class GestionnaireFichiers implements GestionnaireFichierI {
 
     @Override
     public AbstractUtilisateur chargeUtilisateur() throws TP3Exception {
-        return null;
+        return ui.getUtilisateur();
     }
+
 }
